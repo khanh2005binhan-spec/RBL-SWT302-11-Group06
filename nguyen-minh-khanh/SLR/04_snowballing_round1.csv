@@ -1,3 +1,3 @@
 source_record_id,title,authors,year,doi_or_url,snowball_direction,source_reference,decision,exclusion_reason
 15,"LLM4Fin: Fully Automating LLM-Powered Test Case Generation for FinTech Software Acceptance Testing","Zhiyi Xue; Liangguo Li",2024,"10.1145/3650212.3680388","Backward","Reference from Record 15","Include",""
-15,"Automatic creation of acceptance tests by extracting conditionals from requirements: NLP approach and case study","Jannik Fischbach; et al.",2022,"https://doi.org/10.1016/j.jss.2022.111400","Backward","Reference from Record 15","Pending",""
+15,"Automatic creation of acceptance tests by extracting conditionals from requirements: NLP approach and case study","Jannik Fischbach; Julian Frattini; Andreas Vogelsang; Daniel Mendez; Michael Unterkalmsteiner; Andreas Wehrle; Pablo Restrepo Henao; Parisa Yousefi; Tedi Juricic; Jeannette Radduenz; Carsten Wiecher",2023,"10.1016/j.jss.2022.111549","Backward","Reference from Record 15","Exclude","EC2; EC4"
