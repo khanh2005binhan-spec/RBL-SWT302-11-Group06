@@ -6,11 +6,12 @@ Comparison of ChatGPT and Claude for designing UAT test cases using Equivalence 
 
 ## RQ1. How can Large Language Models support software test case generation?
 
-Evidence from the selected studies indicates that LLMs and Generative AI can assist in generating software test cases and testing artifacts.
+Evidence from the selected studies indicates that LLMs and Generative AI can assist in generating software test cases, acceptance tests, and other testing artifacts.
 
 - Record 14 demonstrates systematic test generation using LLMs for detecting fairness faults.
 - Record 15 evaluates automated software test case generation using multiple LLMs.
 - Record 19 discusses and evaluates the use of Generative AI for software testing and test case generation.
+- Record 21 demonstrates the use of LLMs for automating software acceptance test case generation in the FinTech domain.
 
 ## RQ2. How are EP and BVA used with LLM-based test generation?
 
@@ -28,7 +29,7 @@ This supports the motivation for comparing ChatGPT and Claude in the PURE UAT co
 
 ## RQ4. What research gap does the current study address?
 
-The reviewed studies provide evidence that LLMs can support software test generation and that EP/BVA can be incorporated into AI-assisted testing.
+The reviewed studies provide evidence that LLMs can support software test generation and acceptance testing, and that EP/BVA can be incorporated into AI-assisted testing.
 
 However, there is limited evidence specifically comparing ChatGPT and Claude for designing UAT test cases using EP-BVA on the same software system.
 
@@ -38,7 +39,7 @@ Therefore, the current study focuses on a controlled comparison of ChatGPT and C
 
 | Research Question | Main Evidence | Relevant Studies |
 |---|---|---|
-| RQ1: LLM support for test generation | LLMs can generate software testing artifacts and test cases. | 14, 15, 19 |
+| RQ1: LLM support for test generation | LLMs can generate software testing artifacts, test cases, and acceptance tests. | 14, 15, 19, 21 |
 | RQ2: EP/BVA with LLMs | EP and BVA can be incorporated into AI-assisted test generation. | 15, 19 |
 | RQ3: Comparing LLMs | Multiple LLMs, including ChatGPT and Claude, can be evaluated for test generation. | 15 |
-| RQ4: Research gap | Limited direct comparison of ChatGPT and Claude for UAT using EP-BVA on PURE. | 14, 15, 19 |
+| RQ4: Research gap | Limited direct comparison of ChatGPT and Claude for UAT using EP-BVA on PURE. | 14, 15, 19, 21 |
