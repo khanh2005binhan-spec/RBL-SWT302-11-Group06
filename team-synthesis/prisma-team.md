@@ -24,17 +24,31 @@
 ## Screening 2
 
 - Records assessed in full-text screening: 14
-- Final included studies: 3
+- Final included studies from database screening: 3
 - Records excluded after full-text screening: 11
+
+## Snowballing Round 1
+
+- Seed studies: 3
+- Backward snowballing candidates screened: 3
+- Candidates included: 1
+- Candidates excluded: 2
+
+### Snowballing Results
+
+- LLM4Fin: Included
+- Automatic creation of acceptance tests by extracting conditionals from requirements: Excluded (EC2; EC4)
+- Comprehensive Evaluation and Insights into the Use of Large Language Models in the Automation of Behavior-Driven Development Acceptance Test Formulation: Excluded (EC4)
 
 ## Final Included Studies
 
-The final SLR dataset contains 3 studies:
+The final SLR dataset contains 4 studies:
 
 - Record 14: GenFair: Systematic Test Generation for Fairness Fault Detection in Large Language Models
 - Record 15: Automated Software Test Case Generation Using Directional Partially Weighted Ensemble Large Language Models With Retrieval-Augmented Generation (RAG)
 - Record 19: Generative AI in Software Testing Education: Opportunities and Challenges
+- Record 21: LLM4Fin: Fully Automating LLM-Powered Test Case Generation for FinTech Software Acceptance Testing
 
 ## PRISMA Flow Summary
 
-20 records were identified through Google Scholar searches. After the first screening, 14 records remained. These 14 studies were assessed in the second screening stage, resulting in 3 final included studies for evidence synthesis.
+20 records were identified through Google Scholar searches. After the first screening, 14 records remained. These 14 studies were assessed in the second screening stage, resulting in 3 included studies. Backward snowballing from the included studies produced 3 additional candidates, of which 1 was included and 2 were excluded. The final SLR dataset therefore contains 4 included studies for evidence synthesis.
