@@ -1,4 +1,4 @@
 source_record_id,title,authors,year,doi_or_url,snowball_direction,source_reference,decision,exclusion_reason
 15,"LLM4Fin: Fully Automating LLM-Powered Test Case Generation for FinTech Software Acceptance Testing","Zhiyi Xue; Liangguo Li",2024,"10.1145/3650212.3680388","Backward","Reference from Record 15","Include",""
 15,"Comprehensive Evaluation and Insights into the Use of Large Language Models in the Automation of Behavior-Driven Development Acceptance Test Formulation","S. Karpurapu; ...",2024,"https://doi.org/10.1109/ACCESS.2024.3395552","Backward","Reference from Record 15","Include",""
-15,"Automatic creation of acceptance tests by extracting conditionals ...",...,2023,"10.1016/j.jss.2022.111549","Backward","Reference from Record 15","Exclude","EC2; EC4"
+15,"Automatic creation of acceptance tests by extracting conditionals ...",...,2023,"10.1016/j.jss.2022.111549","Backward","Reference from Record 15","Exclude","EC2"
