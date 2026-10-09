@@ -55,7 +55,7 @@ Collection: The ACM Full-Text Collection (852,537 records)
 
 Search fields: Title, Abstract, Keywords
 
-Year filter: chưa áp dụng (3 kết quả đều trong 2018 đến nay)
+Year filter: Retrieved records: 3
 
 Other filters: none
 
@@ -87,7 +87,7 @@ Collection: The ACM Full-Text Collection (852,549 records)
 
 Search fields: Title, Abstract, Keywords
 
-Year filter: 2018 – 2026 (áp dụng sau khi chạy query)
+Year filter: không áp dụng được trên ACM (Basic Edition khóa bộ lọc ngày); lọc năm ở V1 theo IC-Y, Reported results: 33, Retrieved records: 33
 
 Other filters: none
 
@@ -104,3 +104,16 @@ AND
 Reported results: 33 (trước khi lọc năm); <điền số sau khi lọc 2018–2026>
 Retrieved records: <điền số dòng thực sự export được>
 Notes: Khối P và I giữ nguyên String B; khối O nới thành "coverage", "test adequacy", "test effectiveness", "test quality". Dưới 50 kết quả nên dừng ở String C. Chưa chạy trên ACM Guide to Computing Literature (4,106,086 records), chờ PL quyết định.
+
+## Deduplication
+
+Raw records: 36 (S02: 3, S03: 33)
+Duplicates removed: 3 (cùng DOI: 10.1145/3822511, 10.1145/3832122, 10.1145/3644032.3644456)
+Records after dedup: 33 (khớp số dòng của 01_all_records.csv)
+
+## Kiểm tra metadata trước screening
+
+Ô trống: doi = 1 (Boucher 2017, ACM không hiển thị DOI), abstract = 33/33, year = 0
+Tác giả bị cắt trên trang ACM: R012, R017, R024, R029 (đã đánh dấu trong CSV)
+Ghi chú: 5 trang Crossref bị rate limit (HTTP 429) nên không đọc được: 10.1145/3774748.3793625, 10.1145/3439961.3440002, 10.1145/3671016.3671404, 10.1145/3644032.3644454, 10.1145/3639478.3643087
+Bài trước 2018 (sẽ loại ở V1 theo IC-Y): R021 (2016), R031 (2014), R033 (2017)
