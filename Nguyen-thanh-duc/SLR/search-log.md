@@ -12,12 +12,19 @@
 ## Search S01
 
 Date: 2026-10-08
+
 Source: ACM Digital Library
+
 URL: https://dl.acm.org
+
 String ID: A (String A gốc của protocol, không chỉnh sửa)
+
 Collection: The ACM Full-Text Collection (852,537 records)
+
 Search fields: Title, Abstract, Keywords
+
 Year filter: chưa áp dụng (kết quả bằng 0)
+
 Other filters: none
 
 Query:
@@ -32,4 +39,36 @@ AND
 
 Reported results: 0
 Retrieved records: 0
-Notes: ACM phân tích query thành dạng [Title: ...] OR [Abstract: ...] OR [Keywords: ...] và trả về 0 kết quả ("did not return any results"). Chuỗi A có thể quá hẹp vì khối O chứa các cụm rất cụ thể. Không có export. Chưa thử "Expand your search to The ACM Guide to Computing Literature" (4,105,711 records). Dự kiến chạy String B (thêm từ đồng nghĩa, giữ cấu trúc P AND I AND O) theo mục A2 của hướng dẫn.
+Notes: ACM phân tích query thành dạng [Title: ...] OR [Abstract: ...] OR [Keywords: ...] và trả về 0 kết quả ("did not return any results"). Chuỗi A có thể quá hẹp vì khối O chứa các cụm rất cụ thể. Không có export. Chưa thử "Expand your search to The ACM Guide to Computing Literature" (4,105,711 records). Dự kiến chạy String B (thêm từ đồng nghĩa, giữ cấu trúc P AND I AND O).
+
+## Search S02
+
+Date: 2026-10-09
+
+Source: ACM Digital Library
+
+URL: https://dl.acm.org
+
+String ID: B (String A + từ đồng nghĩa, giữ cấu trúc P AND I AND O)
+
+Collection: The ACM Full-Text Collection (852,537 records)
+
+Search fields: Title, Abstract, Keywords
+
+Year filter: chưa áp dụng (3 kết quả đều trong 2018 đến nay)
+
+Other filters: none
+
+Query:
+
+```
+(Title:("black-box test case generation" OR "acceptance test generation" OR "user acceptance testing" OR "test case generation" OR "test design" OR "functional requirements" OR "PURE dataset") OR Abstract:("black-box test case generation" OR "acceptance test generation" OR "user acceptance testing" OR "test case generation" OR "test design" OR "functional requirements" OR "PURE dataset") OR Keyword:("black-box test case generation" OR "acceptance test generation" OR "user acceptance testing" OR "test case generation" OR "test design" OR "functional requirements" OR "PURE dataset"))
+AND
+(Title:("ChatGPT" OR "Claude" OR "large language model" OR "large language models" OR "LLM" OR "one-shot prompting" OR "equivalence partitioning" OR "boundary value analysis") OR Abstract:("ChatGPT" OR "Claude" OR "large language model" OR "large language models" OR "LLM" OR "one-shot prompting" OR "equivalence partitioning" OR "boundary value analysis") OR Keyword:("ChatGPT" OR "Claude" OR "large language model" OR "large language models" OR "LLM" OR "one-shot prompting" OR "equivalence partitioning" OR "boundary value analysis"))
+AND
+(Title:("coverage item" OR "requirements coverage" OR "test coverage" OR "equivalence partition coverage" OR "boundary value coverage" OR "test adequacy") OR Abstract:("coverage item" OR "requirements coverage" OR "test coverage" OR "equivalence partition coverage" OR "boundary value coverage" OR "test adequacy") OR Keyword:("coverage item" OR "requirements coverage" OR "test coverage" OR "equivalence partition coverage" OR "boundary value coverage" OR "test adequacy"))
+```
+
+Reported results: 3
+Retrieved records: 3
+Notes: Thêm từ đồng nghĩa so với String A: khối P ("test case generation", "test design", "functional requirements", "PURE dataset"), khối I ("large language model", "large language models", "LLM"), khối O ("test coverage", "test adequacy"). ACM báo 3 kết quả, vẫn dưới 50. Dự kiến chạy String C (nới khối O).
