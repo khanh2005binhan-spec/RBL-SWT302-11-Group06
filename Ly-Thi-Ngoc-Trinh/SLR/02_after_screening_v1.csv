@@ -1,1 +1,6 @@
 
+Title,Author,Year,Citation Count,Open Access,Status
+AI-Driven Prompt Templates for User Acceptance Test Case Generation,Wantana Sisomboon, Jakkrit Kaewyotha, et al.,2024,3,true,Include
+"Thai and English UAT Test Case Generation: RAG-Ensemble Dataset",Wantana Sisomboon,2026,0,true,Include
+BlackBoxTestGen: An Automatic Black-Box Test Case Generation Framework,Adisak Intana, Kuljaree Tantayakul, et al.,2026,0,true,Include
+FRBETCG: A Fusion-Based Combinatorial Test Case Generation Framework for Optimised Fault Detection and Coverage,Rippika Nethravathi, Sangharatna Godboley,2025,0,true,Exclude
