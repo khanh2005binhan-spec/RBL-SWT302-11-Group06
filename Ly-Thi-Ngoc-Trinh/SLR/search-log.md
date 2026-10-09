@@ -15,3 +15,7 @@
 3. **Lần 3 (Thêm bộ lọc "Since 2025" - Bản chính thức):**
    - **Chuỗi:** `("black-box test case generation" OR "acceptance test generation" OR "user acceptance testing" OR "PURE") AND ("ChatGPT" OR "Claude" OR "one-shot prompting" OR "equivalence partitioning" OR "boundary value analysis")` (kèm bộ lọc thời gian từ năm 2025 trở lại đây)
    - **Kết quả:** 554 works (Dùng số liệu này để xuất file `01_all_records.csv` phục vụ sàng lọc).
+### Lần 4 (Tinh chỉnh chuyên sâu bám sát BDD/Gherkin và UAT - Bản chính thức):
+- **Chuỗi truy vấn:** `("black-box test case generation" OR "acceptance test generation" OR "user acceptance testing" OR "UAT") AND ("ChatGPT" OR "Claude" OR "GPT-4" OR "Anthropic" OR "equivalence partitioning" OR "boundary value analysis") AND ("software requirements" OR "requirements coverage" OR "behavior-driven development" OR "Gherkin")`
+- **Bộ lọc áp dụng:** `Since 2025`
+- **Kết quả:** `3 works` (Đây là tập kết quả chất lượng cao nhất, được chọn lọc chính xác để đưa vào file `02_after_screening_v1.csv` và `03_final_included.csv`).
