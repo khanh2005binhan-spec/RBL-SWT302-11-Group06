@@ -111,6 +111,24 @@ Raw records: 36 (S02: 3, S03: 33)
 Duplicates removed: 3 (cùng DOI: 10.1145/3822511, 10.1145/3832122, 10.1145/3644032.3644456)
 Records after dedup: 33 (khớp số dòng của 01_all_records.csv)
 
+## Screening vòng 1 (V1)
+
+Date: 2026-10-09
+Tiêu chí áp dụng: team-synthesis/ie_criteria.md (IC-P, IC-I, IC-O, IC-S, EC-1 đến EC-6)
+Căn cứ: tiêu đề + phần đầu abstract trên trang kết quả ACM (abstract đầy đủ chưa có)
+
+Records after dedup: 33
+V1 INCLUDE: 3 (R007, R010, R030)
+V1 UNSURE: 7 (R003, R004, R005, R008, R020, R024, R032)
+V1 EXCLUDE: 23
+Full-text assessed (INCLUDE + UNSURE): 10
+
+Kiểm tra: 33 - 23 = 10 (khớp)
+
+Ghi chú:
+- ie_criteria.md không có tiêu chí năm; áp dụng khoảng năm 2018 đến nay của review-protocol.md. 3 bài trước 2018 (R021, R031, R033) bị loại bằng EC-2, có ghi chú thêm lý do năm trong v1_reason. Đã/sẽ đề nghị PL thêm mã năm vào ie_criteria.md.
+- R015 và R017 bị loại bằng EC-3 vì chỉ dài 2 trang (pp. 76-77 và pp. 314-315).
+
 ## Kiểm tra metadata trước screening
 
 Ô trống: doi = 1 (Boucher 2017, ACM không hiển thị DOI), abstract = 33/33, year = 0
