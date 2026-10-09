@@ -72,3 +72,35 @@ AND
 Reported results: 3
 Retrieved records: 3
 Notes: Thêm từ đồng nghĩa so với String A: khối P ("test case generation", "test design", "functional requirements", "PURE dataset"), khối I ("large language model", "large language models", "LLM"), khối O ("test coverage", "test adequacy"). ACM báo 3 kết quả, vẫn dưới 50. Dự kiến chạy String C (nới khối O).
+
+## Search S03
+
+Date: 2026-10-09
+
+Source: ACM Digital Library
+
+URL: https://dl.acm.org
+
+String ID: C (String B, khối O được nới)
+
+Collection: The ACM Full-Text Collection (852,549 records)
+
+Search fields: Title, Abstract, Keywords
+
+Year filter: 2018 – 2026 (áp dụng sau khi chạy query)
+
+Other filters: none
+
+Query:
+
+```
+(Title:("black-box test case generation" OR "acceptance test generation" OR "user acceptance testing" OR "test case generation" OR "test design" OR "functional requirements" OR "PURE dataset") OR Abstract:("black-box test case generation" OR "acceptance test generation" OR "user acceptance testing" OR "test case generation" OR "test design" OR "functional requirements" OR "PURE dataset") OR Keyword:("black-box test case generation" OR "acceptance test generation" OR "user acceptance testing" OR "test case generation" OR "test design" OR "functional requirements" OR "PURE dataset"))
+AND
+(Title:("ChatGPT" OR "Claude" OR "large language model" OR "large language models" OR "LLM" OR "one-shot prompting" OR "equivalence partitioning" OR "boundary value analysis") OR Abstract:("ChatGPT" OR "Claude" OR "large language model" OR "large language models" OR "LLM" OR "one-shot prompting" OR "equivalence partitioning" OR "boundary value analysis") OR Keyword:("ChatGPT" OR "Claude" OR "large language model" OR "large language models" OR "LLM" OR "one-shot prompting" OR "equivalence partitioning" OR "boundary value analysis"))
+AND
+(Title:("coverage" OR "test adequacy" OR "test effectiveness" OR "test quality") OR Abstract:("coverage" OR "test adequacy" OR "test effectiveness" OR "test quality") OR Keyword:("coverage" OR "test adequacy" OR "test effectiveness" OR "test quality"))
+```
+
+Reported results: 33 (trước khi lọc năm); <điền số sau khi lọc 2018–2026>
+Retrieved records: <điền số dòng thực sự export được>
+Notes: Khối P và I giữ nguyên String B; khối O nới thành "coverage", "test adequacy", "test effectiveness", "test quality". Dưới 50 kết quả nên dừng ở String C. Chưa chạy trên ACM Guide to Computing Literature (4,106,086 records), chờ PL quyết định.
