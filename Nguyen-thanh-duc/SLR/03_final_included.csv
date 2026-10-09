@@ -1,1 +1,160 @@
+R003
+ACM Digital Library
+search
+Coverage-based Strategies for the Automated Synthesis of Test Scenarios for Conversational Agents
+Pablo C. Canizares; Daniel Ávila; Sara Perez-Soler; Esther Guerra; Juan De Lara
+2024
+AST '24: Proceedings of the 5th ACM/IEEE International Conference on Automation of Software Test (AST 2024)
+10.1145/3644032.3644456
+https://doi.org/10.1145/3644032.3644456
+String B (S02); String C (S03)
+2026-10-09
+UNSURE
+Need abstract/full text: chatbot test scenario synthesis; unclear whether LLMs are evaluated (IC-I) vs non-LLM strategies (EC-2)
+EXCLUDE
+EC-2; chatbot test-scenario coverage criteria, no ChatGPT/Claude evaluated (Botium/Dialogflow baseline)
+
+R004
+ACM Digital Library
+search
+Test Case Generation Using Large Language Models: Review, Classification and Challenges
+Caixia Li; Fang Yang; Xiufeng Fu; Zhewei Xu; Jianyu Wei; Lirong Zhao; Wei Li; Dacheng Feng
+2026
+DSAI '26: Proceedings of the 2026 3rd International Conference on Digital Society and Artificial Intelligence
+10.1145/3833541.3833583
+https://doi.org/10.1145/3833541.3833583
+String C (S03)
+2026-10-09
+UNSURE
+Review of LLM test case generation; need full text to check IC-S (empirical?) and IC-O; possible snowballing source
+EXCLUDE
+EC-2; literature review of 86 studies, not empirical LLM evaluation; kept as background/snowballing source
+
+R005
+ACM Digital Library
+search
+Evaluating the Complex Reasoning and Performance Capabilities of Large Language Models for Test Case Generation: A Learning-Based Software Testing Suite for Benchmarking Generative AI in Automated Test Case Generation
+Vijay Bala Mahalingam; Harish Parthasarathy; Aakash Baskaran; Bharath Chandrasekaran; Muthukrishnan Rajeshkumar
+2026
+CCEAI '26: Proceedings of the 2026 10th International Conference on Control Engineering and Artificial Intelligence
+10.1145/3793928.3801117
+https://doi.org/10.1145/3793928.3801117
+String C (S03)
+2026-10-09
+UNSURE
+Evaluates ten generative AI models for test case generation; need full text to verify IC-P (black-box/requirements), EP/BVA and IC-O
+EXCLUDE
+EC-1;EC-3; 10 LLMs on 3 Python functions (white-box unit tests, no EP/BVA); 'coverage' = % tests with assertions, not coverage-item. Near-miss
+
+R007
+ACM Digital Library
+search
+Test Case Generation for Requirements in Natural Language - An LLM Comparison Study
+Brahma Reddy Korraprolu; Pavitra Pinninti; Y. Raghu Reddy
+2025
+ISEC '25: Proceedings of the 18th Innovations in Software Engineering Conference
+10.1145/3717383.3717389
+https://doi.org/10.1145/3717383.3717389
+String C (S03)
+2026-10-09
+INCLUDE
+IC-P;IC-I; LLM comparison for test case generation from natural-language requirements; EP/BVA and IC-O to verify in full text
+PENDING
+Full text: 6 LLMs incl. ChatGPT and Claude generate tests from requirements, coverage (decision/condition/MC-DC/execution) measured; but no explicit EP/BVA and no human-designed suite. Pending PL ruling on IC-I strictness
+
+R008
+ACM Digital Library
+search
+Towards a Test Case Generation Tool Based on Functional Requirements
+Daniel David Fernandes; Rita Suzana Pitangueira Maciel
+2021
+SBQS '20: Proceedings of the XIX Brazilian Symposium on Software Quality
+10.1145/3439961.3440002
+https://doi.org/10.1145/3439961.3440002
+String C (S03)
+2026-10-09
+UNSURE
+IC-P matches (functional requirements); need abstract/full text to check whether LLMs are used (IC-I) or non-LLM tool (EC-2)
+EXCLUDE
+EC-2; AutomTest uses equivalence classes + BVA from functional requirements but no LLM; thematic background only
+
+R010
+ACM Digital Library
+search
+LLM4Fin: Fully Automating LLM-Powered Test Case Generation for FinTech Software Acceptance Testing
+Zhiyi Xue; Liangguo Li; Senyue Tian; Xiaohong Chen; Pingping Li; Liangyu Chen; Tingting Jiang; Min Zhang
+2024
+ISSTA 2024: Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis
+10.1145/3650212.3680388
+https://doi.org/10.1145/3650212.3680388
+String C (S03)
+2026-10-09
+INCLUDE
+IC-P;IC-I; LLM test case generation for FinTech acceptance testing from natural-language requirements; EP/BVA and IC-O to verify in full text
+INCLUDE
+IC-P;IC-I;IC-O; full text: ChatGPT (GPT-4, EP/BVA prompt) vs senior/non-expert human testers on 5 FinTech business-rule datasets; business scenario coverage + code coverage reported
+
+R020
+ACM Digital Library
+search
+Preemptive, Buffered, or Guided? Empirical Studies on Human–AI Interaction Strategies for Software Test Case Development
+Billy Shi; Per Ola Kristensson
+2026
+ACM Transactions on Computer-Human Interaction (TOCHI)
+10.1145/3817601
+https://doi.org/10.1145/3817601
+String C (S03)
+2026-10-09
+UNSURE
+Human-AI interaction for LLM-assisted test case development (user study); need full text for IC-P, EP/BVA and IC-O
+PENDING
+PDF not yet obtained; V2 not done
+
+R024
+ACM Digital Library
+search
+VUI Testing of VPA Apps via Behavior Model-Enhanced LLM Agents
+Suwan Li; Lei Bu; Shangqing Liu; Guangdong Bai; Fuman Xie; Kai Chen [+1 more authors not shown in ACM listing; not verified]
+2026
+ACM Transactions on Software Engineering and Methodology (TOSEM)
+10.1145/3771555
+https://doi.org/10.1145/3771555
+String C (S03)
+2026-10-09
+UNSURE
+LLM-agent testing of voice apps; need abstract/full text to verify IC-P (black-box), IC-I and IC-O
+PENDING
+PDF not yet obtained; V2 not done
+
+R030
+ACM Digital Library
+search
+Req2Test: An Approach for the Automatic Generation of Unit Tests from User Stories Using LLMs
+Mattheus França; Fabiane Benitti
+2026
+SAC '26: Proceedings of the 41st ACM/SIGAPP Symposium on Applied Computing
+10.1145/3748522.3780013
+https://doi.org/10.1145/3748522.3780013
+String C (S03)
+2026-10-09
+INCLUDE
+IC-P;IC-I; LLM generation of unit tests from user stories (functional requirements); EP/BVA and IC-O to verify in full text
+INCLUDE
+IC-P;IC-I;IC-O; full text: GPT-4 generates unit tests from user stories with EP/BVA input selection; coverage (code, error-flow) + mutation score reported vs EvoSuite and manual benchmark
+
+R032
+ACM Digital Library
+search
+Whose Specification Did You Test? The Hidden Interpretation Bias in LLM-Generated Test Suites
+Md Mainul Islam
+2026
+RASE '26: Proceedings of the 1st International Workshop on Reliable and trustworthy Automated Software Engineering
+10.1145/3820756.3844908
+https://doi.org/10.1145/3820756.3844908
+String C (S03)
+2026-10-09
+UNSURE
+LLM-generated tests from API specifications (IC-P, IC-I plausible); 4-page short paper, need full text to check IC-O and EC-3
+EXCLUDE
+EC-1;EC-3; full text: Claude Sonnet 4.6 only (no ChatGPT comparison), REST API specs, outcome = test pass rate / interpretation bias, no coverage-item metric vs human suite
 
