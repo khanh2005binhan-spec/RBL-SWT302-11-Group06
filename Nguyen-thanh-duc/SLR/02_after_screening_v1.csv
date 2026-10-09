@@ -1,1 +1,459 @@
+R001
+ACM Digital Library
+search
+Can Large Language Models Reason About Complex Execution Paths? An Empirical Study on Python
+Wenhan Wang; Kaibo Liu; Zeyu Sun; An Ran Chen; Ge Li; Gang Huang; Lei Ma
+2026
+ACM Transactions on Software Engineering and Methodology (TOSEM)
+10.1145/3822511
+https://doi.org/10.1145/3822511
+String B (S02); String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; path-based test generation for Python programs (white-box), not requirement-based black-box design
 
+R002
+ACM Digital Library
+search
+Test vs Mutant: Adversarial LLM Agents for Robust Unit Test Generation
+Pengyu Chang; Yixiong Fang; Silin Chen; Yuling Shi; Beijun Shen; Xiaodong Gu
+2026
+Proceedings of the ACM on Software Engineering (PACMSE)
+10.1145/3832122
+https://doi.org/10.1145/3832122
+String B (S02); String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; unit test generation (search-based vs LLM agents), white-box
+
+R003
+ACM Digital Library
+search
+Coverage-based Strategies for the Automated Synthesis of Test Scenarios for Conversational Agents
+Pablo C. Canizares; Daniel Ávila; Sara Perez-Soler; Esther Guerra; Juan De Lara
+2024
+AST '24: Proceedings of the 5th ACM/IEEE International Conference on Automation of Software Test (AST 2024)
+10.1145/3644032.3644456
+https://doi.org/10.1145/3644032.3644456
+String B (S02); String C (S03)
+2026-10-09
+UNSURE
+Need abstract/full text: chatbot test scenario synthesis; unclear whether LLMs are evaluated (IC-I) vs non-LLM strategies (EC-2)
+
+R004
+ACM Digital Library
+search
+Test Case Generation Using Large Language Models: Review, Classification and Challenges
+Caixia Li; Fang Yang; Xiufeng Fu; Zhewei Xu; Jianyu Wei; Lirong Zhao; Wei Li; Dacheng Feng
+2026
+DSAI '26: Proceedings of the 2026 3rd International Conference on Digital Society and Artificial Intelligence
+10.1145/3833541.3833583
+https://doi.org/10.1145/3833541.3833583
+String C (S03)
+2026-10-09
+UNSURE
+Review of LLM test case generation; need full text to check IC-S (empirical?) and IC-O; possible snowballing source
+
+R005
+ACM Digital Library
+search
+Evaluating the Complex Reasoning and Performance Capabilities of Large Language Models for Test Case Generation: A Learning-Based Software Testing Suite for Benchmarking Generative AI in Automated Test Case Generation
+Vijay Bala Mahalingam; Harish Parthasarathy; Aakash Baskaran; Bharath Chandrasekaran; Muthukrishnan Rajeshkumar
+2026
+CCEAI '26: Proceedings of the 2026 10th International Conference on Control Engineering and Artificial Intelligence
+10.1145/3793928.3801117
+https://doi.org/10.1145/3793928.3801117
+String C (S03)
+2026-10-09
+UNSURE
+Evaluates ten generative AI models for test case generation; need full text to verify IC-P (black-box/requirements), EP/BVA and IC-O
+
+R006
+ACM Digital Library
+search
+LLM-Based Test Case Generation in DBMS through Monte Carlo Tree Search
+Yujia Chen; Yingli Zhou; Fangyuan Zhang; Cuiyun Gao
+2026
+ICSE-Companion '26: Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering
+10.1145/3774748.3793625
+https://doi.org/10.1145/3774748.3793625
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; LLM-based SQL test generation for DBMS testing (fuzzing context), not requirement-based black-box design
+
+R007
+ACM Digital Library
+search
+Test Case Generation for Requirements in Natural Language - An LLM Comparison Study
+Brahma Reddy Korraprolu; Pavitra Pinninti; Y. Raghu Reddy
+2025
+ISEC '25: Proceedings of the 18th Innovations in Software Engineering Conference
+10.1145/3717383.3717389
+https://doi.org/10.1145/3717383.3717389
+String C (S03)
+2026-10-09
+INCLUDE
+IC-P;IC-I; LLM comparison for test case generation from natural-language requirements; EP/BVA and IC-O to verify in full text
+
+R008
+ACM Digital Library
+search
+Towards a Test Case Generation Tool Based on Functional Requirements
+Daniel David Fernandes; Rita Suzana Pitangueira Maciel
+2021
+SBQS '20: Proceedings of the XIX Brazilian Symposium on Software Quality
+10.1145/3439961.3440002
+https://doi.org/10.1145/3439961.3440002
+String C (S03)
+2026-10-09
+UNSURE
+IC-P matches (functional requirements); need abstract/full text to check whether LLMs are used (IC-I) or non-LLM tool (EC-2)
+
+R009
+ACM Digital Library
+search
+Fuzzing RTOS Firmware with Large Language Model Guidance
+Shimin Wang; Debao Kong; Jing Huang; Dawei Zhang; Qiang Wei
+2026
+CSAIDE '26: Proceedings of the 2026 5th International Conference on Cyber Security, Artificial Intelligence and Digital Economy
+10.1145/3819836.3819865
+https://doi.org/10.1145/3819836.3819865
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; RTOS firmware fuzzing
+
+R010
+ACM Digital Library
+search
+LLM4Fin: Fully Automating LLM-Powered Test Case Generation for FinTech Software Acceptance Testing
+Zhiyi Xue; Liangguo Li; Senyue Tian; Xiaohong Chen; Pingping Li; Liangyu Chen; Tingting Jiang; Min Zhang
+2024
+ISSTA 2024: Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis
+10.1145/3650212.3680388
+https://doi.org/10.1145/3650212.3680388
+String C (S03)
+2026-10-09
+INCLUDE
+IC-P;IC-I; LLM test case generation for FinTech acceptance testing from natural-language requirements; EP/BVA and IC-O to verify in full text
+
+R011
+ACM Digital Library
+search
+Beyond Coverage: Automatic Test Suite Augmentation for Enhanced Effectiveness using Large Language Models
+Zeyu Lu; Peng Zhang; Yuge Nie; Yibiao Yang; Yutian Tang; Chun Yong Chong; Yuming Zhou
+2026
+Proceedings of the ACM on Programming Languages (PACMPL)
+10.1145/3798251
+https://doi.org/10.1145/3798251
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; unit test suite augmentation via mutants (white-box)
+
+R012
+ACM Digital Library
+search
+LIReDroid: LLM-Enhanced Test Case Generation for Static Sensitive Behavior Replication
+Yin Wang; Ming Fan; Xicheng Zhang; Jifei Shi; Zhaoyu Qiu; Haijun Wang [+1 more authors not shown in ACM listing; not verified]
+2024
+Internetware '24: Proceedings of the 15th Asia-Pacific Symposium on Internetware
+10.1145/3671016.3671404
+https://doi.org/10.1145/3671016.3671404
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; Android malicious behavior replication, not black-box test design from requirements
+
+R013
+ACM Digital Library
+search
+Domain Adaptation for Code Model-Based Unit Test Case Generation
+Jiho Shin; Sepehr Hashtroudi; Hadi Hemmati; Song Wang
+2024
+ISSTA 2024: Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis
+10.1145/3650212.3680354
+https://doi.org/10.1145/3650212.3680354
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; code-model unit test generation (white-box)
+
+R014
+ACM Digital Library
+search
+UniTSyn: A Large-Scale Dataset Capable of Enhancing the Prowess of Large Language Models for Program Testing
+Yifeng He; Jiabo Huang; Yuyang Rong; Yiwen Guo; Ethan Wang; Hao Chen
+2024
+ISSTA 2024: Proceedings of the 33rd ACM SIGSOFT International Symposium on Software Testing and Analysis
+10.1145/3650212.3680342
+https://doi.org/10.1145/3650212.3680342
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; dataset for program/unit testing with code LLMs (white-box)
+
+R015
+ACM Digital Library
+search
+Generating Software Tests for Mobile Applications Using Fine-Tuned Large Language Models
+Jacob Hoffmann; Demian Frister
+2024
+AST '24: Proceedings of the 5th ACM/IEEE International Conference on Automation of Software Test (AST 2024)
+10.1145/3644032.3644454
+https://doi.org/10.1145/3644032.3644454
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-3; 2-page extended abstract (pp. 76-77) on mobile app tests with fine-tuned LLMs
+
+R016
+ACM Digital Library
+search
+Using Distinct LLMs to Generate an Initial Software Functional Requirements List in Multiple Interactions
+Hayala Curto; Laura Semini; Humberto T. Marques-Neto
+2026
+RAISE '26: Proceedings of the 2nd International Workshop on Requirements engineering for AI-powered SoftwarE
+10.1145/3786174.3788352
+https://doi.org/10.1145/3786174.3788352
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; LLMs generate a requirements list, not test generation
+
+R017
+ACM Digital Library
+search
+Domain Knowledge is All You Need: A Field Deployment of LLM-Powered Test Case Generation in FinTech Domain
+Zhiyi Xue; Liangguo Li; Senyue Tian; Xiaohong Chen; Pingping Li [+3 more authors not shown in ACM listing; not verified]
+2024
+ICSE-Companion '24: Proceedings of the 2024 IEEE/ACM 46th International Conference on Software Engineering: Companion Proceedings
+10.1145/3639478.3643087
+https://doi.org/10.1145/3639478.3643087
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-3; 2-page short paper (pp. 314-315), field deployment report
+
+R018
+ACM Digital Library
+search
+CodaMosa: Escaping Coverage Plateaus in Test Generation with Pre-Trained Large Language Models
+Caroline Lemieux; Jeevana Priya Inala; Shuvendu K. Lahiri; Siddhartha Sen
+2023
+ICSE '23: Proceedings of the 45th International Conference on Software Engineering
+10.1109/icse48619.2023.00085
+https://doi.org/10.1109/icse48619.2023.00085
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; search-based unit test generation with LLM for code coverage (white-box)
+
+R019
+ACM Digital Library
+search
+An Integrated Approach to Hybrid Fuzz–Combinatorial and Structured Testcase Generation for Improved Coverage and Fault Detection Efficiency
+Nethravathi Rippika; Sangharatna Godboley
+2026
+ISEC '26: Proceedings of the 19th Innovations in Software Engineering Conference
+10.1145/3796563.3796581
+https://doi.org/10.1145/3796563.3796581
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-2; hybrid fuzz-combinatorial test generation, no LLM in title/abstract excerpt
+
+R020
+ACM Digital Library
+search
+Preemptive, Buffered, or Guided? Empirical Studies on Human–AI Interaction Strategies for Software Test Case Development
+Billy Shi; Per Ola Kristensson
+2026
+ACM Transactions on Computer-Human Interaction (TOCHI)
+10.1145/3817601
+https://doi.org/10.1145/3817601
+String C (S03)
+2026-10-09
+UNSURE
+Human-AI interaction for LLM-assisted test case development (user study); need full text for IC-P, EP/BVA and IC-O
+
+R021
+ACM Digital Library
+search
+Incorporating Equivalence Partitioning on Classification Trees for Test Suite Size Reduction
+P. Maragathavalli; S. Kanmani
+2016
+ICIA-16: Proceedings of the International Conference on Informatics and Analytics
+10.1145/2980258.2980476
+https://doi.org/10.1145/2980258.2980476
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-2; non-LLM EP on classification trees; also published 2016, outside protocol year range 2018-present
+
+R022
+ACM Digital Library
+search
+Measuring the Influence of Incorrect Code on Test Generation
+Dong Huang; Jie M. Zhang; Mark Harman; Mingzhe Du; Heming Cui
+2026
+ICSE '26: Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering
+10.1145/3744916.3764532
+https://doi.org/10.1145/3744916.3764532
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; effect of incorrect code under test on LLM test generation (white-box)
+
+R023
+ACM Digital Library
+search
+kS-LLM: k-Step based Automatic LLM Test Case Generator using Caching Mechanism to Achieve Higher Code Coverage
+Anand Sharma; Yelleti Vivek; Sangharatna Godboley; P. Radha Krishna
+2026
+ISEC '26: Proceedings of the 19th Innovations in Software Engineering Conference
+10.1145/3796563.3796569
+https://doi.org/10.1145/3796563.3796569
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; LLM test generation aimed at code coverage (white-box)
+
+R024
+ACM Digital Library
+search
+VUI Testing of VPA Apps via Behavior Model-Enhanced LLM Agents
+Suwan Li; Lei Bu; Shangqing Liu; Guangdong Bai; Fuman Xie; Kai Chen [+1 more authors not shown in ACM listing; not verified]
+2026
+ACM Transactions on Software Engineering and Methodology (TOSEM)
+10.1145/3771555
+https://doi.org/10.1145/3771555
+String C (S03)
+2026-10-09
+UNSURE
+LLM-agent testing of voice apps; need abstract/full text to verify IC-P (black-box), IC-I and IC-O
+
+R025
+ACM Digital Library
+search
+PRIMG : Efficient LLM-driven Test Generation Using Mutant Prioritization
+Mohamed Salah Bouafif; Mohammad Hamdaqa; Edward Zulkoski
+2025
+EASE '25: Proceedings of the 29th International Conference on Evaluation and Assessment in Software Engineering
+10.1145/3756681.3756991
+https://doi.org/10.1145/3756681.3756991
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; mutation-guided unit test generation (white-box)
+
+R026
+ACM Digital Library
+search
+HITS: High-coverage LLM-based Unit Test Generation via Method Slicing
+Zejun Wang; Kaibo Liu; Ge Li; Zhi Jin
+2024
+ASE '24: Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering
+10.1145/3691620.3695501
+https://doi.org/10.1145/3691620.3695501
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; LLM unit test generation for Java methods (white-box)
+
+R027
+ACM Digital Library
+search
+Bridging Gaps in LLM Code Translation: Reducing Errors with Call Graphs and Bridged Debuggers
+Yang Luo; Richard Yu; Fajun Zhang; Ling Liang; Yongqiang Xiong
+2024
+ASE '24: Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering
+10.1145/3691620.3695322
+https://doi.org/10.1145/3691620.3695322
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; code translation, not test generation
+
+R028
+ACM Digital Library
+search
+OntoScope: Using a Divergent-Convergent Interaction Framework to Support LLM-based Ontology Scoping
+Yihang Zhao; Albert Meroño Peñuela; Elena Simperl
+2026
+IUI '26: Proceedings of the 31st International Conference on Intelligent User Interfaces
+10.1145/3742413.3789225
+https://doi.org/10.1145/3742413.3789225
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; ontology scoping, not software testing
+
+R029
+ACM Digital Library
+search
+Tangent: An Empirical Study of Testing Practices for LLM-Based Agent Applications
+Rangeet Pan; Tyler Stennett; Divya Sankar; Bridget McGinn; Alessandro Orso; Raju Pavuluri [+2 more authors not shown in ACM listing; not verified]
+2026
+ASE '26: Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering
+10.1145/3832783.3837414
+https://doi.org/10.1145/3832783.3837414
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-1; testing practices for LLM-based agent applications, not LLM-based test design
+
+R030
+ACM Digital Library
+search
+Req2Test: An Approach for the Automatic Generation of Unit Tests from User Stories Using LLMs
+Mattheus França; Fabiane Benitti
+2026
+SAC '26: Proceedings of the 41st ACM/SIGAPP Symposium on Applied Computing
+10.1145/3748522.3780013
+https://doi.org/10.1145/3748522.3780013
+String C (S03)
+2026-10-09
+INCLUDE
+IC-P;IC-I; LLM generation of unit tests from user stories (functional requirements); EP/BVA and IC-O to verify in full text
+
+R031
+ACM Digital Library
+search
+Effective unit-testing in model-based software development
+Damodaram Kamma; Pooja Maruthi
+2014
+AST 2014: Proceedings of the 9th International Workshop on Automation of Software Test
+10.1145/2593501.2593507
+https://doi.org/10.1145/2593501.2593507
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-2; non-LLM model-based unit testing; also published 2014, outside protocol year range 2018-present
+
+R032
+ACM Digital Library
+search
+Whose Specification Did You Test? The Hidden Interpretation Bias in LLM-Generated Test Suites
+Md Mainul Islam
+2026
+RASE '26: Proceedings of the 1st International Workshop on Reliable and trustworthy Automated Software Engineering
+10.1145/3820756.3844908
+https://doi.org/10.1145/3820756.3844908
+String C (S03)
+2026-10-09
+UNSURE
+LLM-generated tests from API specifications (IC-P, IC-I plausible); 4-page short paper, need full text to check IC-O and EC-3
+
+R033
+ACM Digital Library
+search
+Transforming workflow models into automated end-to-end acceptance test cases
+Mathieu Boucher; Gunter Mussbacher
+2017
+MISE '17: Proceedings of the 9th International Workshop on Modelling in Software Engineering
+String C (S03)
+2026-10-09
+EXCLUDE
+EC-2; non-LLM acceptance test generation fro
