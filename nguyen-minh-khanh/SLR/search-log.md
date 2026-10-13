@@ -3,24 +3,39 @@
 ## Search Strategy
 
 - **Database:** Google Scholar
-- **Search date:** To be recorded after rerunning the search
-- **Search string version:** Revised
+- **Search strategy:** Revised search strategy
+- **Purpose:** Identify studies related to LLM-based black-box test case generation, acceptance testing, and test coverage.
+- **Note:** Searches are conducted using separate queries. The exact query and result count are recorded for each search.
 
-### Search 1 — Revised Combined Search String
+## Revised Search 1 — Black-box Test Case Generation
 
-```text
-("black-box test case generation" OR "acceptance test generation" OR "user acceptance testing" OR "PURE") AND ("ChatGPT" OR "Claude" OR "one-shot prompting" OR "equivalence partitioning" OR "boundary value analysis") AND ("coverage item" OR "requirements coverage" OR "equivalence partition coverage" OR "boundary value coverage")
-```
+- **Database:** Google Scholar
+- **Search string:** `"black-box test case generation" "ChatGPT" coverage`
+- **Date searched:** 2026-10-13
+- **Number of results displayed:** 10
+- **Records collected for preliminary screening:** 9
+- **Screening status:** Preliminary title and snippet review
+- **Notes:** Nine search results were reviewed and shared for preliminary screening. These are the records reviewed, not necessarily the total number of results returned by Google Scholar. Final decisions require checking the abstracts and, where necessary, the full texts.
 
-- **Date searched:** Pending rerun
-- **Number of results:** Pending verification using the search tool
-- **Exported records:** Pending
-- **Notes:** The revised search string replaces the previous search queries. The actual number of results and exported records must be recorded after rerunning the search.
+## Revised Search 2 — User Acceptance Testing
 
-## Previous Search Log — October 6, 2026
+- **Database:** Google Scholar
+- **Search string:** `"user acceptance testing" ("ChatGPT" OR "Claude") ("requirements coverage" OR "boundary value analysis")`
+- **Date searched:** 2026-10-13
+- **Number of results displayed:** Google Scholar displayed varying estimated result counts across pages (approximately 23–28).
+- **Records reviewed:** Multiple records reviewed across the result pages.
+- **Screening status:** Preliminary title and snippet review
+- **Notes:** The displayed result count varied when navigating between pages. The counts were not added together because they represent estimates for the same query, not separate searches. Eligibility decisions require further abstract and full-text screening.
+## Revised Search 3 — PURE and EP-BVA
 
-The following searches were conducted using the previous search strategy. Their result counts must not be attributed to the revised search string.
-
+- **Database:** Google Scholar
+- **Search string:** `"PURE" ("test case generation" OR "equivalence partitioning" OR "boundary value analysis") LLM`
+- **Date searched:** 2026-10-13
+- **Number of results displayed:** Approximately 889 results (as displayed on the first page; Google Scholar's estimate may vary across pages)
+- **Records reviewed:** 9 records from the first page
+- **Screening status:** Preliminary title and snippet review
+- **Notes:** The first page contained potentially relevant studies on LLM-based UAT generation using PURE and boundary-value test generation with coverage analysis. Further abstract and full-text screening is needed to assess eligibility. The displayed result count is an estimate and is not the number of unique records collected.
+- 
 ### Previous Search 1
 
 - **Database:** Google Scholar
@@ -44,7 +59,9 @@ The following searches were conducted using the previous search strategy. Their 
 
 ## Next Steps
 
-1. Rerun the revised search using the tool approved by the research group.
-2. Record the actual search date, query, result count, and exported records.
-3. Remove duplicates and document the screening process using the agreed inclusion and exclusion criteria.
-4. Update the screening files and PRISMA counts based on the verified results.
+1. Run Revised Search 2 and Revised Search 3 on Google Scholar.
+2. Record the actual search date and result count displayed for each query.
+3. Collect potentially relevant records and save their titles, authors, publication years, and URLs or DOIs.
+4. Remove duplicate records before screening.
+5. Apply the group's agreed inclusion and exclusion criteria to titles, abstracts, and full texts as needed.
+6. Update the screening files and PRISMA counts using the verified records and decisions.
