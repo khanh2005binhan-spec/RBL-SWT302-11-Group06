@@ -13,6 +13,6 @@
 | 5 | ChatGPT vs Claude testing | 12/10/2026 | 1,110 | 2022-2026, Computer Science | Relevance | top 50 |
 | 6 | LLM black-box test design | 12/10/2026 | 9,950 | 2022-2026, Computer Science | Relevance | top 50 |
 
-## Bảng snowballing (điền ở Bước 6)
+## Bảng snowballing 
 | Seed | Hướng | Ngày | Số bài tìm được | Số bài mới sau bỏ trùng |
 |------|-------|------|-----------------|--------------------------|
