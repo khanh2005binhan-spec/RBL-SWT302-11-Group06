@@ -6,7 +6,7 @@
 
 | # | Cụm từ | Ngày search | Số kết quả | Bộ lọc | Sắp xếp | Số bản ghi lấy |
 |---|--------|-------------|-----------|--------|---------|----------------|
-| 1 | LLM acceptance test generation | 13/10/2026 | | 2022-2026, Computer Science | Relevance | top 50 |
+| 1 | LLM acceptance test generation | 13/10/2026 | 7,800 | 2022-2026, Computer Science | Relevance | top 50 |
 | 2 | ChatGPT equivalence partitioning | 13/10/2026 | | 2022-2026, Computer Science | Relevance | top 50 |
 | 3 | LLM boundary value analysis | 13/10/2026 | | 2022-2026, Computer Science | Relevance | top 50 |
 | 4 | LLM test generation requirements | 13/10/2026 | | 2022-2026, Computer Science | Relevance | top 50 |
