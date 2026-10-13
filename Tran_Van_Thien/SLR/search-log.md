@@ -1,12 +1,18 @@
 # Nhật ký tìm kiếm Semantic Scholar (Giai đoạn A)
+
 **Người thực hiện:** Trần Văn Thiện
 **Cơ sở dữ liệu:** Semantic Scholar
 **Chủ đề:** Comparing ChatGPT and Claude for EP-BVA-Based UAT Design on PURE
 
-| Cụm từ đã gõ (Search String)         | Ngày search  | Số kết quả (Results) | Bộ lọc áp dụng (Filters) |
-| ------------------------------------ | ------------ | -------------------- | ------------------------ |
-| "ChatGPT UAT design"                 | 08/10/2026   |  9,080               | Năm: 2022-2026           |
-| "LLM user acceptance testing"        | 08/10/2026   |  11,100              | Năm: 2022-2026           |
-| "ChatGPT equivalence partitioning"   | 08/10/2026   |  1,040               | Năm: 2022-2026           |
-| "Claude boundary value analysis"     | 08/10/2026   |  19,100              | Năm: 2022-2026           |
-| "LLM black box testing"              | 08/10/2026   |  15,500              | Năm: 2022-2026           |
+| # | Cụm từ | Ngày search | Số kết quả | Bộ lọc | Sắp xếp | Số bản ghi lấy |
+|---|--------|-------------|-----------|--------|---------|----------------|
+| 1 | LLM acceptance test generation | 13/10/2026 | | 2022-2026, Computer Science | Relevance | top 50 |
+| 2 | ChatGPT equivalence partitioning | 13/10/2026 | | 2022-2026, Computer Science | Relevance | top 50 |
+| 3 | LLM boundary value analysis | 13/10/2026 | | 2022-2026, Computer Science | Relevance | top 50 |
+| 4 | LLM test generation requirements | 13/10/2026 | | 2022-2026, Computer Science | Relevance | top 50 |
+| 5 | ChatGPT vs Claude testing | 13/10/2026 | | 2022-2026, Computer Science | Relevance | top 50 |
+| 6 | LLM black-box test design | 13/10/2026 | | 2022-2026, Computer Science | Relevance | top 50 |
+
+## Bảng snowballing (điền ở Bước 6)
+| Seed | Hướng | Ngày | Số bài tìm được | Số bài mới sau bỏ trùng |
+|------|-------|------|-----------------|--------------------------|
