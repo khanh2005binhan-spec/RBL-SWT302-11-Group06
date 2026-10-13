@@ -5,7 +5,7 @@
 ```text
        [ Identification ]
   Records identified through OpenAlex search 
-  (Lần 1: n = 554 | Lần 2 tinh chỉnh: n = 3)
+  (Lần 1: n = 546 | Lần 2 tinh chỉnh: n = 3)
                  |
                  v
        [ Screening & Eligibility ]
