@@ -1,28 +1,20 @@
-# PRISMA Flow Diagram - Sàng lọc tài liệu
+# PRISMA Flow Diagram - Sơ đồ quá trình sàng lọc
 
-## 1. Sơ đồ các giai đoạn (Identification & Screening & Inclusion)
+## 1. Sơ đồ các giai đoạn
 
 ```text
        [ Identification ]
   Records identified through OpenAlex search 
-             (n = 554)
+  (Lần 1: n = 554 | Lần 2 tinh chỉnh: n = 3)
                  |
                  v
-       [ Screening (Vòng 1) ]
-  Records screened by Title & Abstract 
-             (n = 554)
-                 |
-                 +---> Excluded (n = 550)
-                       (Không đúng phạm vi đề tài, lạc đề)
-                 |
-                 v
-       [ Eligibility (Vòng 2) ]
-  Full-text articles assessed for eligibility 
-             (n = 4)
+       [ Screening & Eligibility ]
+  Records screened and assessed for full-text 
+                 (n = 3)
                  |
                  +---> Excluded (n = 0)
                  |
                  v
        [ Included ]
   Studies included in qualitative synthesis 
-             (n = 4)
+                 (n = 3)
