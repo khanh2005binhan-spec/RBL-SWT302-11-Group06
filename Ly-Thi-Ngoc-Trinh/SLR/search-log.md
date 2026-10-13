@@ -10,7 +10,7 @@
 ### Lần 1 (Tìm kiếm diện rộng ban đầu):
 - **Chuỗi truy vấn:** `("black-box test case generation" OR "acceptance test generation" OR "user acceptance testing" OR "PURE") AND ("ChatGPT" OR "Claude" OR "one-shot prompting" OR "equivalence partitioning" OR "boundary value analysis")`
 - **Bộ lọc:** Since 2025 (Từ năm 2025 trở lại đây)
-- **Kết quả:** `546 works`
+- **Kết quả:** `481 works`
 - **Mục đích:** Dùng số liệu này để xuất file 01_all_records.csv phục vụ sàng lọc.
 
 ### Lần 2 (Tinh chỉnh chuyên sâu bám sát BDD/Gherkin và UAT - Bản chính thức):
