@@ -1,6 +1,5 @@
-source,seed,title,author,year,url,v2_decision,v2_reason
-Semantic Scholar,0,"XUAT-Copilot: Multi-Agent Collaborative System for Automated User Acceptance Testing with Large Language Model","Zhitao Wang, Wei Wang, Jun Zhou",2024,,INCLUDE,
-Semantic Scholar,0,"Requirements-Augmented Generation for Trustworthy Acceptance Testing of LLM-Based Software","Fan-Yu Wang, Chetan Arora, Si-Wei Jiang",2026,,INCLUDE,
-Semantic Scholar,0,"Automated Structural Testing of LLM-Based Agents: Methods, Framework, and Case Studies","Jens Kohl, Otto Kruse, Celine Laurent-Winter",2025,,INCLUDE,
-Semantic Scholar,0,"Intelligent Software Testing for Test Case Analysis Framework Using ChatGPT with Natural Language Processing and Deep Learning Integration","Alaa Najmi, M. El-dosuky",2025,,EXCLUDE,EC-No Empirical Data
-Semantic Scholar,0,"Revolutionizing Test Case Generation: Integrating AI and Chat GPT for Enhanced Software Testing","Akash Wavhal, Akshay Hinge, Aniket Gunjal, S. Raut",2025,,INCLUDE,
+ID,title,authors,year,venue,doi_or_url,source,search_string_id,seed,v1_decision,v1_reason,v2_decision,v2_reason
+SS-018,"XUAT-Copilot: Multi-Agent Collaborative System for Automated User Acceptance Testing with Large Language Model","Zhitao Wang; Wei Wang; Zirao Li; Long Wang",2024,ArXiv,https://api.semanticscholar.org/CorpusID:266818292,Semantic Scholar,1,0,INCLUDE,,INCLUDE,
+SS-007,"Requirements-Augmented Generation for Trustworthy Acceptance Testing of LLM-Based Software","Fan-Yu Wang; Chetan Arora; Zhen-Ping Xie",2026,Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering,https://api.semanticscholar.org/CorpusID:291080621,Semantic Scholar,1,0,INCLUDE,,INCLUDE,
+SS-148,"CS-FuzGA-PTS: Maximizing Fault Detection Through Optimizing T-Way Test Suite Prioritization Based on Boundary Value Analysis","Abdullah B. Nasser; Md. Abdul Kader; Abdulrahman A. Alsewari",2024,IEEE Access,https://api.semanticscholar.org/CorpusID:274045183,Semantic Scholar,1,0,INCLUDE,,INCLUDE,
+SS-189,"Boundary Value Test Input Generation Using Prompt Engineering with LLMs: Fault Detection and Coverage Analysis","Xiujing Guo; Chen Li; Tatsuhiro Tsuchiya",2025,ArXiv,https://api.semanticscholar.org/CorpusID:275906387,Semantic Scholar,1,0,INCLUDE,,INCLUDE,
