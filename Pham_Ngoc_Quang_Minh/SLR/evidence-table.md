@@ -1,6 +1,9 @@
-# Evidence table
+# Evidence Table (`evidence-table.md`)
 
-No studies reached full-text assessment or final inclusion. The supplied IEEE Xplore export produced 0 V1 INCLUDE and 0 V1 UNSURE records; see [search-log.md](./search-log.md).
-
-| Paper | Tool/LLM | Task | Dataset | Feedback | Comparison | Metric | Result | Code | Limitation | P | I | C | O | Near-RQ |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Paper | Tool/LLM | Dataset | Metric | Kết quả | Code | Hạn chế | Gần RQ |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Djajadi et al., 2025, ICPC** <br> DOI: [10.1109/ICPC66645.2025.00040](https://doi.org/10.1109/ICPC66645.2025.00040) | GPT-4o, Claude 3.5 Sonnet | 15 open-source Java projects (Unit tests summary) | User feedback rating, Conciseness score, Readability | Positive feedback from 11 participants on conciseness and understanding | N/A | Small-scale user study (11 participants) | P I O |
+| **Zhu & Zhang, 2025, EIT** <br> DOI: [10.1109/EIT67313.2025.11232178](https://doi.org/10.1109/EIT67313.2025.11232178) | GPT-4o, LLaMA-3, 4 mainstream LLMs | TestEval dataset (2024) | Test Execution ratio (TE), Hallucination rate (HR), Structural coverage | High hallucination rates, GPT-4o shows strong structural coverage | N/A | Limited to public dataset TestEval | P I O |
+| **Ferreira et al., 2025, AST** <br> DOI: [10.1109/AST66626.2025.00007](https://doi.org/10.1109/AST66626.2025.00007) | GPT-4, OpenAI API | Industrial case study (Acceptance tests) | Acceptance test generation accuracy, Requirements coverage | Successfully generated acceptance tests with high requirements alignment | N/A | Industrial context limited to a single company system | P I O |
+| **Fonseca et al., 2025, ASE** <br> DOI: [10.1109/ASE63991.2025.00273](https://doi.org/10.1109/ASE63991.2025.00273) | Large Language Models (LLM-based pipeline) | Mobile applications industrial case study | Test generation success rate, execution time | Streamlined mobile acceptance testing efficiently | N/A | Focus primarily on mobile application UI domains | P I O |
+| **Yin & Mohammed, 2024, ICIIBMS** <br> DOI: [10.1109/ICIIBMS62405.2024.10792720](https://doi.org/10.1109/ICIIBMS62405.2024.10792720) | Pre-trained LLMs (On-Premises deployment) | Empirical dataset of enterprise software modules | Code coverage, mutation score | On-premises LLMs achieved comparable test generation efficacy to cloud models | N/A | Restricted to specific on-premises hardware constraints | P I O |
