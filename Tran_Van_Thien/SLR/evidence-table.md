@@ -1,8 +1,1 @@
-# Evidence Table - Trần Văn Thiện
 
-| ID | Title | LLM/Tool | Dataset | Metric | Kết quả chính | Hạn chế (Limitation) |
-|---|---|---|---|---|---|---|
-| SS-018 | XUAT-Copilot: Multi-Agent Collaborative System for Automated User Acceptance Testing with Large Language Model | XUAT-Copilot (LLM Multi-Agent) | Web/App UI Dataset | Pass@1 Accuracy | Cải thiện độ chính xác Pass@1 đáng kể trong UAT so với single-agent architecture. | Cần đánh giá mở rộng trên các hệ thống ERP hoặc phần mềm quy mô lớn phức tạp hơn. |
-| SS-007 | Requirements-Augmented Generation for Trustworthy Acceptance Testing of LLM-Based Software | REAG (RAG + LLM) | Requirements Dataset | Verdict Reliability | Định lượng độ tin cậy của kết quả test dựa trên documents (requirements) đầu vào cho kiểm thử chấp nhận. | Phụ thuộc hoàn toàn vào độ chi tiết của tài liệu yêu cầu (Requirements). |
-| SS-148 | CS-FuzGA-PTS: Maximizing Fault Detection Through Optimizing T-Way Test Suite Prioritization Based on Boundary Value Analysis | Thuật toán tối ưu kết hợp AI | T-Way Test Suites | Fault Detection Rate | Kết hợp phân tích giá trị biên (BVA) giúp phát hiện lỗi biên tối đa so với các chiến lược cũ. | Mô hình khá nặng khi xử lý với số lượng tham số biến đầu vào quá nhiều. |
-| SS-189 | Boundary Value Test Input Generation Using Prompt Engineering with LLMs: Fault Detection and Coverage Analysis | ChatGPT / LLMs | BVA Test Inputs | Mutation Score / Coverage | Khai thác hiệu quả LLM qua prompt engineering để tự động sinh test case giá trị biên chính xác cao. | Đôi khi LLM vẫn bị "ảo giác" (hallucination) tạo ra các test case biên không hợp lệ. |
