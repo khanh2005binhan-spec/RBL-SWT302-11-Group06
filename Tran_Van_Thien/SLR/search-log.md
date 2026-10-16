@@ -5,7 +5,7 @@
 
 Bộ lọc: Computer Science, năm 2018 – nay. Ghi chú: web Semantic Scholar không lọc riêng Title/Abstract/Keywords.
 
-### Lượt 0 – String A nguyên văn (web) – KHÔNG HỢP LỆ
+### Lượt 0 – String A Trần Văn Thiện – KHÔNG HỢP LỆ
 - Ngày chạy: 16/10/2026
 - Kết quả hiển thị: 250
 - Quan sát: trang hiện dòng "Sorry, we couldn't find any papers about" và tự chạy lại bản "without quotes" (bỏ ngoặc kép, coi AND/OR như từ thường). 250 bài là kết quả khớp lỏng, không phải bài thỏa cả 3 khối.
