@@ -106,6 +106,35 @@ Nhận xét: phần lớn lượt hợp lệ < 50 kết quả. Đề xuất (ch�
 - Bài tiềm năng liên quan bị loại ở V1 (nếu có) và lý do: ___
 - Người rà soát V1: ___ | Ngày hoàn tất: ___
 
+## Screening V2 (full-text) → 03_final_included.csv
+
+- Date bắt đầu: 2026-10-16
+- Input: 6 bài từ V1 (2 INCLUDE + 4 UNSURE): R008, R014, R015, R024, R035, R040
+- Cột thêm: v2_decision (INCLUDE / EXCLUDE / PENDING), v2_reason
+- Kiểm tra cho mỗi bài: IC-E (≥ 1 kết quả số trong bảng/hình), EC-S (< 4 trang), EC-N (không có thí nghiệm), EC-A (không tải được full-text), và tiêu chí riêng của nhóm (IC-P/IC-I trong ie_criteria.md)
+
+### Tiến độ (cập nhật ngày ___)
+| Bản ghi | Nguồn full-text | Trạng thái | Ghi chú |
+|---|---|---|---|
+| R040 | arXiv (đã đọc) | PENDING | IC-E đạt (Bảng 2–4, Hình 3); ~16 trang (EC-S đạt); dùng PURE (4/79 tài liệu SRS, 107 yêu cầu) và gpt-4o-mini sinh Gherkin; không nhắc EP/BVA. IC-T: arXiv preprint nhưng bài ghi đã được nhận tại SEET 2026 (Springer); chờ xác nhận với PL và kiểm tra việc được nhận |
+| R008 | Trang tóm tắt (chưa đọc full-text) | PENDING | Sinh test scenario từ yêu cầu bằng ChatGPT; chưa thấy bảng/hình số liệu → IC-E chưa xác nhận |
+| R015 | IEEE (cần thư viện trường) | PENDING | Chưa đọc full-text; 7 trang (532–538) |
+| R024 | IEEE (cần thư viện trường) | PENDING | Chưa đọc full-text; 6 trang (1–6) |
+| R014 | Springer (truy cập mở) | PENDING | Chưa đọc; về trích xuất yêu cầu, có thể EXCLUDE (IC-I) nếu không có thiết kế test |
+| R035 | Springer (truy cập mở) | PENDING | Chưa đọc; về LLM cho requirements engineering, có thể EXCLUDE (IC-I) nếu không có thiết kế test |
+
+### Số liệu PRISMA V2 (điền khi xong)
+| Số bản ghi | Giá trị |
+|---|---|
+| Vào V2 | 6 |
+| EXCLUDE ở V2 | ___ |
+| INCLUDE cuối (final) | ___ |
+| Không tải được full-text (EC-A) | ___ |
+
+### Ghi chú
+- Bài nào không tải được full-text: ghi EC-A và lý do, không dùng nguồn không hợp pháp.
+- Người đọc V2: ___ | Ngày hoàn tất: ___
+
 ## Snowballing (A2b)
 
 Chưa thực hiện (theo kế hoạch ngày 4). Seed (DOI): chưa chọn | Backward: chưa chạy | Forward: chưa chạy | Thêm vào 01_all_records.csv: 0 dòng
