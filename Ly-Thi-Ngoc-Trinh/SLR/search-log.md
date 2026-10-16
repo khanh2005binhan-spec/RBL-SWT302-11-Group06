@@ -42,7 +42,7 @@
 - **v1 → v2:** v1 trả về 0 hits vì khối O (`"coverage item"`, `"equivalence partition coverage"`...) là cụm rất hiếm. Theo hướng dẫn của cô, khi quá ít thì bỏ khối O.
 - **v2 → v3:** 1.083 hits là quá nhiều (>500). Áp IC-Y (năm từ 2020, vì ChatGPT/LLM chỉ phổ biến từ giai đoạn này) và bỏ `"PURE"` vì là từ tiếng Anh thông dụng, kéo nhiều bài lạc đề.
 - **v3 → v4:** 50 hits nằm sát ngưỡng dưới nên nới nhẹ bằng từ đồng nghĩa LLM và `"acceptance testing"` để không bỏ sót bài dùng cách gọi khác.
-- **Khối C (baseline người) cố ý không đưa vào chuỗi** (theo hướng dẫn của cô, chỉ thêm khi thật sự cần).
+- **Khối C (baseline người) cố ý không đưa vào chuỗi** (chỉ thêm khi thật sự cần).
 
 ## Kết quả cuối
 
