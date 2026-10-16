@@ -1,4 +1,4 @@
-## Semantic Scholar (người phụ trách: ___)
+## Semantic Scholar
 
 ### String A gốc (theo review-protocol.md)
 ("black-box test case generation" OR "acceptance test generation" OR "user acceptance testing" OR "PURE") AND ("ChatGPT" OR "Claude" OR "one-shot prompting" OR "equivalence partitioning" OR "boundary value analysis") AND ("coverage item" OR "requirements coverage" OR "equivalence partition coverage" OR "boundary value coverage")
