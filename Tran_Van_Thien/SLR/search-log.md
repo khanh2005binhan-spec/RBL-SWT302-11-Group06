@@ -1,63 +1,31 @@
-# Search Log: Semantic Scholar
+## Metadata export / Dedup
 
-## Protocol snapshot (từ team-synthesis/review-protocol.md)
+- Date: 2026-10-16
+- Cách export: file BibTeX (citation.bib) từ Semantic Scholar; web S2 không xuất hàng loạt qua CSV nên chuyển .bib sang 01_all_records.csv bằng script bib_to_csv.py (không viết tay bản ghi).
+- Nguồn bản ghi: kết quả các lượt hợp lệ (S02, S03, S06, S07) gộp lại; chưa gắn được query cho từng bản ghi (xem Ghi chú bên dưới)
+- Số bản ghi trong .bib: 54
+- Sau dedup trong lượt (DOI; nếu không có thì tiêu đề chuẩn hóa + năm): 54 (không bỏ bản ghi nào; có 2 bài trùng khóa Li2025HowMC nhưng là 2 bài khác nhau nên giữ cả hai)
+- Ghi vào 01_all_records.csv: 54 dòng (database = Semantic Scholar, source = search, record_id R001–R054)
 
-- RQ: For 20 frozen functional requirements from PURE, how do ChatGPT and Claude using the same one-shot EP–BVA prompt differ in coverage-item percentage relative to a human-designed test suite produced before viewing any AI output?
-- Year range: 2018 – present
-- Search fields: Title, Abstract, Keywords
-- Dedup: DOI (lowercase, normalized); secondary: normalized title + first author + year
-- Screening: Pass 1 (title/abstract) → Pass 2 (full text)
-- Snowballing: max 2 rounds, Semantic Scholar / Crossref API; candidates must pass V1 and V2
-- IC/EC: xem team-synthesis/ie_criteria.md
+### Metadata trước khi bổ sung (ngay sau khi chuyển từ .bib)
+- Ô trống: doi=54, abstract=54, year=0, venue=0, authors=1
+- Nhận xét: .bib của Semantic Scholar không có DOI và abstract; url là link CorpusID.
 
-## Search S01
+### Bổ sung abstract/doi qua API
+- Tool: enrich_s2.py (Semantic Scholar Graph API, endpoint /paper/batch, tra theo CorpusID)
+- Chạy lúc: ___ | Tra được: ___ / 54
+- Ô trống sau bổ sung: doi=___ abstract=___
+- Quy ước: abstract vẫn trống thì đánh dấu Unsure ở vòng 1 (không EXCLUDE chỉ vì thiếu abstract)
 
-Date: 2026-10-16
+### Kiểm chứng công cụ
+1. Số bản ghi khớp số kết quả web? ___ (nếu lệch, giải thích: .bib có thể là tổng các lượt hợp lệ sau khi gộp, không phải riêng một lượt)
+2. Mở ngẫu nhiên 5 bản ghi, đối chiếu title/năm/DOI với trang gốc: ___
+3. Chạy lại script, kết quả giống lần đầu? ___
 
-Source: Semantic Scholar (web)
-
-URL: https://www.semanticscholar.org
-
-String ID: A (String A gốc của protocol, không chỉnh sửa), chạy nguyên văn
-
-Query:
-("black-box test case generation" OR "acceptance test generation" OR "user acceptance testing" OR "PURE") AND ("ChatGPT" OR "Claude" OR "one-shot prompting" OR "equivalence partitioning" OR "boundary value analysis") AND ("coverage item" OR "requirements coverage" OR "equivalence partition coverage" OR "boundary value coverage")
-
-Search fields: không chọn được riêng Title/Abstract/Keywords trên web S2 (tìm toàn bộ metadata)
-
-Year filter: không áp dụng ở lượt này
-
-Other filters: none
-
-Results displayed: 250
-
-Status: KHÔNG HỢP LỆ. Trang hiện "Sorry, we couldn't find any papers about" rồi tự chạy lại bản "without quotes" (bỏ ngoặc kép, AND/OR coi như từ thường). Không tính vào PRISMA.
-
-Reason / Action: web S2 không chạy được chuỗi dài; tách String A thành các cụm ngắn (S02–S07) theo hướng dẫn A2. Có ảnh chụp màn hình làm bằng chứng.
-
-## Searches S02–S07 (String A tách thành cụm ngắn; mỗi lượt 1 cụm mỗi khối)
-
-Date: 2026-10-16 | Source: Semantic Scholar (web) | String ID: A-split
-Filters: Fields of Study = Computer Science; Date Range = 2018–2026
-
-| ID | Query (nguyên văn) | Results | Valid? | Notes |
-|---|---|---|---|---|
-| S02 | "acceptance test generation" "ChatGPT" "requirements coverage" | 4 | Yes | Ảnh chụp ban đầu lọc 2019–2025; cần xác nhận lại với 2018–2026. Bài cũ nhất 2019 |
-| S03 | "user acceptance testing" "equivalence partitioning" "coverage item" | 2 | Yes | 1 bài sát, 1 bài lạc đề |
-| S04 | "black-box test case generation" "Claude" "boundary value coverage" | 58 | No | "couldn't find any papers"; tự chạy lại không ngoặc kép |
-| S05 | "acceptance test generation" "boundary value analysis" "equivalence partition coverage" | 23 | No | Như S04 |
-| S06 | "user acceptance testing" "one-shot prompting" "requirements coverage" | 2 | Yes | 1 bài sát, 1 bài ít liên quan |
-| S07 | "PURE" "ChatGPT" "requirements coverage" | 54 | Yes | Nhiều nhiễu vì "PURE" khớp từ thông thường |
-
-Nhận xét: phần lớn lượt hợp lệ < 50 kết quả. Đề xuất (chờ PL quyết định, chưa đổi String A): thêm từ đồng nghĩa hoặc bớt khối coverage. Mọi thay đổi sẽ ghi lý do và ngày vào log này.
-
-## Metadata export / Dedup (điền sau khi chạy)
-
-- Tool: s2_fetch.py (Semantic Scholar Graph API), lệnh: ___
-- Total API báo: ___ | Lấy được: ___ | Sau dedup: ___ | Lệch so với web và lý do: ___
-- Kiểm chứng: (1) số bản ghi khớp web? ___ (2) đối chiếu 5 bản ghi ngẫu nhiên: ___ (3) chạy lại cùng query: ___
-- Ô trống trước screening: doi=___ abstract=___ year=___
-- Ghi vào 01_all_records.csv: ___ dòng (database = Semantic Scholar, source = search)
+### Ghi chú
+- Chưa điền cột query cho từng bản ghi vì .bib không lưu thông tin lượt tìm; sẽ đối chiếu tiêu đề với các trang kết quả S02/S03/S06/S07 rồi cập nhật: ___
+- Danh sách chứa nhiều bài không liên quan (y tế, giáo dục...), nhất là từ lượt S07 ("PURE"); loại ở vòng screening theo IC/EC, không xóa ở bước này.
+- Bộ lọc năm 2018–nay đã áp dụng trên web; trong .bib không có bài trước 2018.
 
 ## Snowballing (A2b)
 
