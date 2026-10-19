@@ -99,12 +99,3 @@
 4. **Baseline người:** R010 và R001 so với tester người nhưng chủ yếu về thời gian hoặc coverage tổng; không bài nào nói rõ bộ test của người được làm trước khi xem kết quả AI.
 5. **Khoảng trống:** trong 11 bài đã đọc, không bài nào kết hợp PURE, ChatGPT và Claude, cùng một prompt one-shot EP–BVA, baseline người lập trước và coverage-item. Kết luận này chỉ đúng với các bài đã đọc, chưa tính 6 bài thiếu và snowballing.
 
----
-
-## Việc cần kiểm tra trước khi nộp
-
-- Đối chiếu cột trong bảng này với mẫu Evidence Table của cô (mình chưa thấy mẫu).
-- R022: đọc lại bảng precision/recall của Claude; xác định gold standard lập khi nào.
-- R001: đọc kỹ công thức coverage và cách chọn 8 yêu cầu.
-- Các số liệu lấy từ hình (R003 requirement coverage, R010 thời gian) nên đối chiếu với hình gốc.
-- Bổ sung 6 bài còn thiếu và các bài snowballing.
