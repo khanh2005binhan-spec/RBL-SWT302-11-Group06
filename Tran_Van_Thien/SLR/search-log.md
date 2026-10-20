@@ -59,7 +59,7 @@ Records after dedup: 54 (khớp số dòng của 01_all_records.csv)
 
 Ô trống: doi = 1 (R003), abstract = 16/54, year = 0
 Ghi chú: abstract thiếu thì không loại chỉ vì thiếu metadata, đánh Unclear và lấy thêm thông tin.
-Kiểm chứng công cụ: số bản ghi khớp web: ___ | đối chiếu 5 bản ghi ngẫu nhiên: ___ | chạy lại script: ___
+Kiểm chứng công cụ: số bản ghi khớp web: khớp (54 bài trong thư viện Semantic Scholar = 54 dòng trong 01_all_records.csv, không có bài trùng) | đối chiếu 5 bản ghi ngẫu nhiên: đã kiểm R005, R015, R024, R033, R047, khớp title/năm/DOI với trang gốc | chạy lại script: giống lần đầu (tra được 41/54, còn trống doi=1, abstract=16)
 
 ## Screening vòng 1 (V1)
 
