@@ -26,6 +26,7 @@ Year filter: không áp dụng
 Other filters: none
 
 Query:
+(“black-box test case generation” OR “acceptance test generation” OR “user acceptance testing” OR “PURE”) AND (“ChatGPT” OR “Claude” OR “one-shot prompting” OR “equivalence partitioning” OR “boundary value analysis”) AND (“coverage item” OR “requirements coverage” OR “equivalence partition coverage” OR “boundary value coverage”)
 
 Reported results: 250 (không hợp lệ)
 Retrieved records: 0
