@@ -82,5 +82,5 @@ Ghi chú:
 
 ## Screening vòng 2 (V2)
 
-Date: ___
-Records vào V2: 12 | V2 INCLUDE: 10 (file 03) | Chưa quyết: 2 (R008, R040) | V2 EXCLUDE: ___ | Không lấy được full-text: ___
+Date: 19/10/2026
+Records vào V2: 12 | V2 INCLUDE: 10 (file 03) | Chưa quyết: 2 (R008, R040) | V2 EXCLUDE: 0 | Không lấy được full-text: 0
