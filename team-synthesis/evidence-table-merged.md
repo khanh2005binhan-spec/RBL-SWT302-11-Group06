@@ -82,11 +82,4 @@
 | Req2Test (2026), ACM SAC 2026. [10.1145/3748522.3780013](https://doi.org/10.1145/3748522.3780013) | Req2Test; GPT-4 adapter (Gpt4Adapter); adapters for other models, but full pipeline reported with GPT-4 | Four REST API projects (P1–P4); user stories in DSL on Zenodo/GitHub | Code coverage; mutation score; pass rate | Abstract: mean code coverage 91.75%; reported comparison with EvoSuite varies by model package; about 72.8% faults detected versus benchmark. Member notes flag another body-text value of 85.97%; re-open PDF before citing. | https://github.com/specgentest/req2test-tool; Zenodo | Only GPT-4 ran the full pipeline; Java/REST API setting limits generalization. | P I O ⚑ | PENDING/INCLUDE status should be confirmed against team V2 CSV; candidate counterevidence per member 4 (3/4). |
 | LLM comparison for test case generation from natural-language requirements (ISEC 2025). [10.1145/3717383.3717389](https://doi.org/10.1145/3717383.3717389) | BARD, ChatGPT 3.5, Claude, Gemini, ChatGPT 4o, Llama 3 | Natural-language requirements; handwritten Simulink model as ground truth; SLDV comparison | Decision, condition, MC/DC, execution coverage | Member table notes all LLMs perform poorly on complex requirements (below 25% at some levels); per-model values need rechecking in Figure 3. | not reported | Only coverage assessed, not correctness; requirements/dataset limited. | P I C O ⚑ | PENDING; do not count as confirmed INCLUDE. Member 4 classified 2/4 near-RQ factors. |
 
-## PL checklist before final commit
-- [ ] Cross-check every status against `03_final_included.csv` (especially PENDING and candidate records).
-- [ ] Confirm the exact `near_rq` text for each record; do not infer it from P/I/C/O counts.
-- [ ] Verify conflicting or locator-missing results against the cited PDF (e.g., Req2Test 91.75% vs 85.97%; R022 reported 98.44% ensemble result).
-- [ ] Search Papers with Code for rows marked N/A in the Code column, as required by the course instructions.
-- [ ] Add the six missing-full-text records and snowballing records when available; do not silently mark them included.
-
 **Caution:** Some member tables describe candidate/near-RQ studies rather than confirmed final inclusions. Keep the merged table as an evidence inventory until PL verifies the screening CSV and full texts.
