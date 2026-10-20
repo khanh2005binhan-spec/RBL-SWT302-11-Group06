@@ -55,8 +55,4 @@ No single paper combines PURE, ChatGPT and Claude, EP-BVA, a human baseline made
 | White-box unit test papers (TestPilot, ASTER, JUnitGenie, MAGISTER, ...) | Measure code coverage, not requirement-based coverage-item |
 | R038 BlackBoxTestGen | No LLM (may be mentioned in related work as a black-box EP approach) |
 
-## 5. To do before freezing
-- [ ] Cross-check the 5 core papers against full text; R001 dataset/domain is unverified, R022 lacks table/figure numbers.
-- [ ] ISEC 2025: recheck per-model values in Figure 3 before citing.
-- [ ] Search Papers with Code for the Code cells that are N/A.
-- [ ] PL to confirm the ⚑ / counterevidence labels in RBL-2 and cross-check statuses against 03_final_included.csv.
+
