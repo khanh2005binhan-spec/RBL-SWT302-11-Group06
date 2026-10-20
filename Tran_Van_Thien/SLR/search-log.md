@@ -66,14 +66,15 @@ Nhận xét: phần lớn lượt hợp lệ < 50 kết quả. Đề xuất (ch�
 
 ### Bổ sung DOI
 - Đã điền 13 DOI có căn cứ: R008, R042 (xác minh trên trang nguồn); R002, R009, R012, R016, R017, R019, R033, R034, R040, R048, R051 (DOI arXiv dạng 10.48550/arXiv.<mã>, đã đối chiếu mã arXiv với tiêu đề/tác giả/năm)
-- Còn trống doi: 41/54 → bổ sung bằng enrich_s2.py (Semantic Scholar API theo CorpusID); bài nào API không có thì ghi "không có DOI"
+- Sau khi chạy enrich_s2.py còn trống doi: 1/54 (R003) → ghi "không có DOI"
 - Lưu ý R042: Semantic Scholar ghi năm 2019, OpenAlex ghi 2020; thống nhất giá trị năm: ___ (cả hai ≥ 2018)
 - Lưu ý R002: tiêu đề arXiv hiện tại khác tiêu đề trong .bib ("ChatGPT" vs "Chatbots") nhưng cùng bài (cùng mã arXiv và tác giả)
 
 ### Bổ sung abstract/doi qua API (enrich_s2.py)
-- Chạy lúc: ___ | Tra được: ___ / 54
-- Ô trống sau bổ sung: doi=___ abstract=___
-- Quy ước: abstract vẫn trống thì đánh dấu Unsure ở V1 (không EXCLUDE chỉ vì thiếu abstract)
+- Chạy lúc: 2026-10-19 19:55 (Google Colab) | Tra được: 41 / 54
+- Ô trống sau bổ sung: doi=1 (R003), abstract=16, year=0
+- Quy ước: abstract vẫn trống thì không EXCLUDE chỉ vì thiếu abstract; bài thiếu abstract được xử lý ở bước đọc full-text (V2)
+- File kết quả: 01_all_records_enriched.csv, dùng làm 01_all_records.csv chính thức (54 dòng)
 
 ### Kiểm chứng công cụ
 1. Số bản ghi khớp số kết quả web? ___ (54 là tổng gộp các lượt hợp lệ đã lưu, không phải riêng một lượt)
@@ -87,54 +88,43 @@ Nhận xét: phần lớn lượt hợp lệ < 50 kết quả. Đề xuất (ch�
 
 ## Screening V1 (title/abstract) → 02_after_screening_v1.csv
 
-- Date: 2026-10-16
-- Input: 01_all_records.csv (54 bản ghi)
+- Date: 2026-10-20
+- Input: 01_all_records.csv (54 bản ghi sau bổ sung DOI/abstract)
 - Tiêu chí: IC/EC theo team-synthesis/ie_criteria.md
-- Cách làm: dựa trên title; abstract chưa bổ sung đủ nên bài chưa rõ đánh UNSURE
-- Cột thêm: v1_decision (INCLUDE / EXCLUDE / UNSURE), v1_reason
+- Cách làm: người phụ trách đọc lại và lọc thủ công title/abstract; bản nháp ban đầu (tự động, chỉ dựa trên title) đã được thay thế
+- Cột thêm: v1_decision (INCLUDE / EXCLUDE), v1_reason (mã IC/EC)
 
 | Số bản ghi | Giá trị |
 |---|---|
 | Vào V1 (sau dedup) | 54 |
-| EXCLUDE ở V1 | 48 |
-| INCLUDE ở V1 | 2 (R015, R024) |
-| UNSURE ở V1 | 4 (R008, R014, R035, R040) |
-| Chuyển sang V2 (full-text) | 6 |
+| EXCLUDE ở V1 | 42 |
+| INCLUDE ở V1 | 12 (R012, R013, R014, R015, R018, R024, R027, R035, R037, R042, R050, R054) |
+| Chuyển sang V2 (full-text) | 12 |
 
-- Lý do EXCLUDE chủ yếu: không thuộc chủ đề (không phải sinh test/UAT bằng LLM từ yêu cầu): IC-P/IC-I; một số bài lý do riêng (R042 không dùng LLM; R032 thuật toán tối ưu test; R020 ngôn ngữ/không liên quan)
-- Rà lại 6 bài INCLUDE/UNSURE sau khi có abstract: ___
-- Bài tiềm năng liên quan bị loại ở V1 (nếu có) và lý do: ___
-- Người rà soát V1: ___ | Ngày hoàn tất: ___
+### Ghi chú
+- Bài chưa có abstract trong danh sách INCLUDE: R012, R042 → quyết định cuối dựa trên full-text ở V2
+- Tiêu chí lọc áp dụng: ___
+- Bài sát đề tài nhưng bị loại ở V1 (nếu có) và lý do: ___
+- Người rà soát V1: ___ | Ngày hoàn tất: 2026-10-20
 
 ## Screening V2 (full-text) → 03_final_included.csv
 
-- Date bắt đầu: 2026-10-16
-- Input: 6 bài từ V1 (2 INCLUDE + 4 UNSURE): R008, R014, R015, R024, R035, R040
-- Cột thêm: v2_decision (INCLUDE / EXCLUDE / PENDING), v2_reason
-- Kiểm tra cho mỗi bài: IC-E (≥ 1 kết quả số trong bảng/hình), EC-S (< 4 trang), EC-N (không có thí nghiệm), EC-A (không tải được full-text), và tiêu chí riêng của nhóm (IC-P/IC-I trong ie_criteria.md)
-
-### Tiến độ (cập nhật ngày ___)
-| Bản ghi | Nguồn full-text | Trạng thái | Ghi chú |
-|---|---|---|---|
-| R040 | arXiv (đã đọc) | PENDING | IC-E đạt (Bảng 2–4, Hình 3); ~16 trang (EC-S đạt); dùng PURE (4/79 tài liệu SRS, 107 yêu cầu) và gpt-4o-mini sinh Gherkin; không nhắc EP/BVA. IC-T: arXiv preprint nhưng bài ghi đã được nhận tại SEET 2026 (Springer); chờ xác nhận với PL và kiểm tra việc được nhận |
-| R008 | Trang tóm tắt (chưa đọc full-text) | PENDING | Sinh test scenario từ yêu cầu bằng ChatGPT; chưa thấy bảng/hình số liệu → IC-E chưa xác nhận |
-| R015 | IEEE (cần thư viện trường) | PENDING | Chưa đọc full-text; 7 trang (532–538) |
-| R024 | IEEE (cần thư viện trường) | PENDING | Chưa đọc full-text; 6 trang (1–6) |
-| R014 | Springer (truy cập mở) | PENDING | Chưa đọc; về trích xuất yêu cầu, có thể EXCLUDE (IC-I) nếu không có thiết kế test |
-| R035 | Springer (truy cập mở) | PENDING | Chưa đọc; về LLM cho requirements engineering, có thể EXCLUDE (IC-I) nếu không có thiết kế test |
+- Date bắt đầu: ___
+- Input: 12 bài từ V1: R012, R013, R014, R015, R018, R024, R027, R035, R037, R042, R050, R054
+- Cột thêm: v2_decision (INCLUDE / EXCLUDE), v2_reason
+- Kiểm tra cho mỗi bài: IC-E (≥ 1 kết quả số trong bảng/hình), EC-S (< 4 trang), EC-N (không có thí nghiệm), EC-A (không tải được full-text), và tiêu chí riêng của nhóm (IC-P/IC-I)
+- Trạng thái: chưa thực hiện
 
 ### Số liệu PRISMA V2 (điền khi xong)
 | Số bản ghi | Giá trị |
 |---|---|
-| Vào V2 | 6 |
+| Vào V2 | 12 |
 | EXCLUDE ở V2 | ___ |
 | INCLUDE cuối (final) | ___ |
 | Không tải được full-text (EC-A) | ___ |
 
-### Ghi chú
-- Bài nào không tải được full-text: ghi EC-A và lý do, không dùng nguồn không hợp pháp.
 - Người đọc V2: ___ | Ngày hoàn tất: ___
 
 ## Snowballing (A2b)
 
-Chưa thực hiện (theo kế hoạch ngày 4). Seed (DOI): chưa chọn | Backward: chưa chạy | Forward: chưa chạy | Thêm vào 01_all_records.csv: 0 dòng
+Chưa thực hiện (theo kế hoạch A2b). Seed (DOI): chưa chọn (chọn trong số bài đã qua V2) | Backward: chưa chạy | Forward: chưa chạy | Thêm vào 01_all_records.csv: 0 dòng
