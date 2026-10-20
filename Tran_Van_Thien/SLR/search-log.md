@@ -90,37 +90,32 @@ Nhận xét: phần lớn lượt hợp lệ < 50 kết quả. Đề xuất (ch�
 
 - Date: 2026-10-20
 - Input: 01_all_records.csv (54 bản ghi sau bổ sung DOI/abstract)
-- Tiêu chí: IC/EC theo team-synthesis/ie_criteria.md
-- Cách làm: người phụ trách đọc lại và lọc thủ công title/abstract; bản nháp ban đầu (tự động, chỉ dựa trên title) đã được thay thế
-- Cột thêm: v1_decision (INCLUDE / EXCLUDE), v1_reason (mã IC/EC)
+- Tiêu chí V1 (xem được từ title/abstract): IC-L, IC-Y, IC-P, IC-I, EC-O, EC-D (theo team-synthesis/ie_criteria.md)
+- Cách làm: người phụ trách đọc title/abstract và lọc thủ công; bài chưa rõ hoặc thiếu abstract đánh Unsure và cho qua V2
+- Cột thêm: v1_decision (INCLUDE / EXCLUDE), v1_reason
 
 | Số bản ghi | Giá trị |
 |---|---|
 | Vào V1 (sau dedup) | 54 |
 | EXCLUDE ở V1 | 42 |
-| INCLUDE ở V1 | 12 (R012, R013, R014, R015, R018, R024, R027, R035, R037, R042, R050, R054) |
-| Chuyển sang V2 (full-text) | 12 |
+| INCLUDE ở V1 | 12 |
+| Unsure ở V1 | 0 |
+| Chuyển sang V2 (INCLUDE + Unsure) | 12 |
 
-### Ghi chú
-- Bài chưa có abstract trong danh sách INCLUDE: R012, R042 → quyết định cuối dựa trên full-text ở V2
-- Tiêu chí lọc áp dụng: ___
-- Bài sát đề tài nhưng bị loại ở V1 (nếu có) và lý do: ___
 - Người rà soát V1: ___ | Ngày hoàn tất: 2026-10-20
 
 ## Screening V2 (full-text) → 03_final_included.csv
 
-- Date bắt đầu: ___
-- Input: 12 bài từ V1: R012, R013, R014, R015, R018, R024, R027, R035, R037, R042, R050, R054
+- Date: ___
+- Input: 12 bài qua V1: R012, R013, R014, R015, R018, R024, R027, R035, R037, R042, R050, R054
+- Tiêu chí V2 (cần đọc full-text): IC-E, IC-T, EC-S, EC-N, EC-A, cộng IC-P/IC-I/EC-O khi đọc kỹ
 - Cột thêm: v2_decision (INCLUDE / EXCLUDE), v2_reason
-- Kiểm tra cho mỗi bài: IC-E (≥ 1 kết quả số trong bảng/hình), EC-S (< 4 trang), EC-N (không có thí nghiệm), EC-A (không tải được full-text), và tiêu chí riêng của nhóm (IC-P/IC-I)
-- Trạng thái: chưa thực hiện
 
-### Số liệu PRISMA V2 (điền khi xong)
 | Số bản ghi | Giá trị |
 |---|---|
 | Vào V2 | 12 |
-| EXCLUDE ở V2 | ___ |
-| INCLUDE cuối (final) | ___ |
+| EXCLUDE ở V2 | 0 |
+| INCLUDE cuối (final) | 12 |
 | Không tải được full-text (EC-A) | ___ |
 
 - Người đọc V2: ___ | Ngày hoàn tất: ___
