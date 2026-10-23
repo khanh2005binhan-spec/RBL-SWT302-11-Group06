@@ -1,4 +1,4 @@
-# Snowballing cá nhân (một lượt, bước 7): đoạn dán vào `search-log.md`
+# Snowballing cá nhân (một lượt, bước 7)
 
 ## 1. Chọn seed
 
